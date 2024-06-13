@@ -68,30 +68,28 @@ h2 {
   color: var(--primary-color);
 }
 
-.about-segment-content {
+.main-content {
   margin: 30px;
 }
-.about-segment {
+.main-content-container {
   padding: 150px 30px 20px;
 }
-.about-segment h1 {
+.main-content-container h1 {
   font-size: 56px;
   line-height: 1.5;
 }
 
-.about-segment h4 {
+.main-content-container h4 {
   font-size: 20px;
   line-height: 2;
 }
-.about-segment p,
-.coding-journey-content p,
-.skills-content p {
+.main-content-container p,
+.subsection-content p {
   text-align: justify;
   line-height: 1.5;
   opacity: 0.75;
 }
-.coding-journey-content,
-.skills-content {
+.subsection-content {
   padding: 30px 50px;
 }
 
@@ -105,26 +103,25 @@ h2 {
 @media (max-width: 800px) {
   .hero,
   .projects-overview,
-  .about-segment,
-  .coding-journey-content,
-  .skills-content {
+  .main-content-container,
+  .subsection-content {
     padding: 20px;
   }
 
   .hero h1,
-  .about-segment h1 {
+  .main-content-container h1 {
     font-size: 40px;
   }
 
   .hero h6,
-  .about-segment h4 {
+  .main-content-container h4 {
     font-size: 20px;
     line-height: 2;
   }
   .intro-description {
     font-size: 15px;
   }
-  .about-segment {
+  .main-content-container {
     text-align: center;
   }
   .skill-icon {
