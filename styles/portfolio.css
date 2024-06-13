@@ -16,7 +16,7 @@ h3 {
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
-.hero h4 {
+.hero h6 {
   font-size: 36px;
 }
 .hero {
@@ -68,20 +68,69 @@ h2 {
   color: var(--primary-color);
 }
 
+.about-segment-content {
+  margin: 30px;
+}
+.about-segment {
+  padding: 150px 30px 20px;
+}
+.about-segment h1 {
+  font-size: 56px;
+  line-height: 1.5;
+}
+
+.about-segment h4 {
+  font-size: 20px;
+  line-height: 2;
+}
+.about-segment p,
+.coding-journey-content p,
+.skills-content p {
+  text-align: justify;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+.coding-journey-content,
+.skills-content {
+  padding: 30px 50px;
+}
+
+.skill-icon {
+  max-width: 30%;
+}
+.icon-row {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 800px) {
-  .hero {
-    padding: 10px;
+  .hero,
+  .projects-overview,
+  .about-segment,
+  .coding-journey-content,
+  .skills-content {
+    padding: 20px;
   }
 
-  .hero h1 {
+  .hero h1,
+  .about-segment h1 {
     font-size: 40px;
   }
 
-  .hero h4 {
+  .hero h6,
+  .about-segment h4 {
     font-size: 20px;
     line-height: 2;
   }
   .intro-description {
     font-size: 15px;
+  }
+  .about-segment {
+    text-align: center;
+  }
+  .skill-icon {
+    display: none;
+  }
+  .icon-row {
+    margin: 0;
   }
 }
