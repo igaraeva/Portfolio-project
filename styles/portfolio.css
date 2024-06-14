@@ -3,6 +3,7 @@
   --default-font-family: "Poppins", sans-serif;
   --primary-color: #272343;
   --secondary-color: #ecfffb;
+  --tertiary-color: #1f6f78;
 }
 
 body {
@@ -16,6 +17,11 @@ h3 {
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
+
+h2 {
+  font-size: 40px;
+}
+
 .hero h6 {
   font-size: 36px;
 }
@@ -29,19 +35,16 @@ h3 {
   font-size: 96px;
 }
 
-.intro-description {
+.content-description {
   font-size: 20px;
   line-height: 2.5;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 .scroll-down {
   padding-top: 100px;
 }
 
-h2 {
-  font-size: 40px;
-}
 .app-img {
   width: 400px;
   height: 300px;
@@ -49,10 +52,6 @@ h2 {
   border-radius: 4px;
 }
 
-.projects-overview p {
-  line-height: 2;
-  opacity: 0.7;
-}
 .btn-branded {
   background-color: var(--primary-color);
   color: white;
@@ -68,29 +67,28 @@ h2 {
   color: var(--primary-color);
 }
 
-.main-content {
-  margin: 30px;
-}
 .main-content-container {
   padding: 150px 30px 20px;
 }
-.main-content-container h1 {
+
+.main-content {
+  margin: 50px;
+}
+
+.subsection-content {
+  padding: 30px 50px;
+}
+
+.main-content h1 {
   font-size: 56px;
   line-height: 1.5;
 }
 
-.main-content-container h4 {
-  font-size: 20px;
-  line-height: 2;
-}
-.main-content-container p,
+.main-content p,
 .subsection-content p {
-  text-align: justify;
   line-height: 1.5;
   opacity: 0.75;
-}
-.subsection-content {
-  padding: 30px 50px;
+  font-size: 18px;
 }
 
 .skill-icon {
@@ -100,9 +98,26 @@ h2 {
   margin-bottom: 50px;
 }
 
+.contact-section {
+  background-color: var(--secondary-color);
+  padding: 0 20px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.contact-section a {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+.contact-section a:hover {
+  text-decoration: underline;
+  color: var(--tertiary-color);
+}
+
 @media (max-width: 800px) {
   .hero,
-  .projects-overview,
   .main-content-container,
   .subsection-content {
     padding: 20px;
@@ -129,5 +144,10 @@ h2 {
   }
   .icon-row {
     margin: 0;
+  }
+  .contact-section {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 }
