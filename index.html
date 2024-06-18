@@ -35,6 +35,40 @@
     ></script>
   </head>
   <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-white shadow bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="/images/logo-icon.png" alt="IG logo" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="hero text-center">
       <h6>Welcome to my page!</h6>
 
@@ -49,8 +83,8 @@
       </h4>
       <p class="scroll-down d-none d-lg-block">⬇ Scroll Down ⬇</p>
     </div>
-    <div class="subsection-content text-center">
-      <h2 class="my-3">Latest work</h2>
+    <div class="subsection-content text-center" id="projects">
+      <h2 class="projects my-3">Latest work</h2>
       <h4 class="mb-5 content-description">
         While studying with SheCodes, I developed several interactive projects
         that are hosted on <strong>GitHub</strong> and <strong>Netlify</strong>.

@@ -4,6 +4,7 @@
   --primary-color: #272343;
   --secondary-color: #ecfffb;
   --tertiary-color: #1f6f78;
+  --icon-color: #fdfbf5;
 }
 
 body {
@@ -20,6 +21,25 @@ h3 {
 
 h2 {
   font-size: 40px;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+.nav-item {
+  font-family: var(--heading-font-family);
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0 20px;
+}
+.nav-link {
+  color: var(--primary-color);
+
+  transition: all 150ms ease-in-out;
+}
+.nav-link:hover {
+  color: var(--tertiary-color);
 }
 
 .hero h6 {
@@ -115,7 +135,10 @@ h2 {
   text-decoration: underline;
   color: var(--tertiary-color);
 }
-
+.projects {
+  padding-top: 40px;
+  line-height: 2;
+}
 @media (max-width: 800px) {
   .hero,
   .main-content-container,
@@ -126,6 +149,7 @@ h2 {
   .hero h1,
   .main-content-container h1 {
     font-size: 40px;
+    line-height: 2;
   }
 
   .hero h6,
