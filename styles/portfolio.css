@@ -85,6 +85,15 @@ footer li a:hover {
   opacity: 0.8;
 }
 
+.content-description a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  transition: all 100ms ease-in-out;
+}
+.content-description a:hover {
+  text-decoration: underline;
+}
+
 .scroll-down {
   padding-top: 100px;
 }
@@ -112,7 +121,7 @@ footer li a:hover {
 }
 
 .main-content-container {
-  padding: 150px 30px 20px;
+  padding: 100px 30px 20px;
 }
 
 .main-content {
