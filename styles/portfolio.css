@@ -22,6 +22,30 @@ h3 {
 h2 {
   font-size: 40px;
 }
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer img {
+  max-height: 150px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  line-height: 2;
+  font-size: 15px;
+  transition: all 100ms ease-in-out;
+}
+footer li a:hover {
+  text-decoration: underline;
+  color: var(--tertiary-color);
+}
 
 .logo {
   max-height: 50px;
@@ -121,7 +145,7 @@ h2 {
 .contact-section {
   background-color: var(--secondary-color);
   padding: 0 20px;
-  margin: 50px;
+  margin: 30px;
   border-radius: 10px;
 }
 
@@ -160,7 +184,8 @@ h2 {
   .intro-description {
     font-size: 15px;
   }
-  .main-content-container {
+  .main-content-container,
+  footer {
     text-align: center;
   }
   .skill-icon {
